@@ -16,7 +16,7 @@
         <div class="field has-addons is-grouped-centered column is-offset-3 is-three-fifths">
           <%= text_field_tag('query', '', class: 'input has-margin-r-7', placeholder: 'Search by...') %>
           <div class='select has-margin-r-7'>
-            <%= select_tag('criteria', options_for_select(['All fields', 'PDB', 'Name', 'Organism'], 'All fields')) %>
+            <%= select_tag('criteria', options_for_select(['All fields', 'Cluster (by PDB)', 'Name', 'Organism'], 'All fields')) %>
           </div>
           <%= submit_tag('Search', class: 'button is-info') %>
         </div>
