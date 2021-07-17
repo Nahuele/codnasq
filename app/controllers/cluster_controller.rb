@@ -1,6 +1,7 @@
 class ClusterController < ApplicationController
   def show
     begin
+      @error = false
       cluster = Conformer.find_by_pdb_id([params[:codnasq_id]]) || Cluster.find(cluster_id)
       if cluster.class.to_s == 'Conformer'
         cluster = Cluster.find_by_codnasq_id(cluster.cluster_id)    
@@ -16,7 +17,7 @@ class ClusterController < ApplicationController
         }
     rescue => e
       # Redirect to not-found page
-      redirect_to root_path
+      @error = true
     end
   end
 

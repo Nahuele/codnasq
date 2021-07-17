@@ -7,7 +7,7 @@ LOCAL_MINI_DB = "#{Rails.root}/db/dbqmini.csv".freeze
 EXTERNAL_COMPLETE_DB = 'http://ufq.unq.edu.ar/codnasq/dbqcomplete.csv'.freeze
 EXTERNAL_MINI_DB = 'http://ufq.unq.edu.ar/codnasq/dbqmini.csv'.freeze
 
-external_csv_to_import = LOCAL_MINI_DB
+external_csv_to_import = EXTERNAL_COMPLETE_DB
 
 
 puts("Amount of Cluster: #{Cluster.count}")
