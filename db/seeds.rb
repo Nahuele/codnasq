@@ -49,6 +49,6 @@ puts("Amount of Cluster: #{Cluster.count}")
 puts("Amount of Conformer: #{Conformer.count}")
 puts("Amount of ConformerPair: #{ConformerPair.count}")
 
-Dir[File.join(Rails.root, 'db/data_migrations/**/*.rb')].sort.each do |data_migration|
-  load data_migration
-end
+#Dir[File.join(Rails.root, 'db/data_migrations/**/*.rb')].sort.each do |data_migration|
+#  load data_migration
+#end

@@ -1,5 +1,20 @@
-<div class="column is-four-fifths is-offset-1">
-  <div class="box has-text-centered">
-    <h2 class="is-size-3">Not found</h2>
+<section class='section is-medium'>
+  <div class='container'>
+    <div class='columns is-vcentered"'>
+      <div class='column has-text-centered center-img'>
+        <h1 class='title' style='margin-bottom: 4vh;'>Results Not Found</h1>
+        <p class='subtitle'>Sorry, please go back to the Home page.</p>
+        <%= link_to('Home', root_path, class: 'button') %>
+      </div>
+      <div class="column has-text-centered">
+        <%= image_tag('mov_tert.gif', alt: 'not-found') %>        
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<style>
+  .center-img {
+    align-self: center; 
+  }
+</style>
